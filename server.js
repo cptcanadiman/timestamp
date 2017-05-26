@@ -3,6 +3,7 @@ var moment = require('moment')
 var app = express()
 var monthArray = ['January','February','March','April','May','June','July','August','September','October','November','December']
 
+app.use(express.static('Public'))
 
 app.get('/:INFO', function (req, res) {
   var info = req.params.INFO
