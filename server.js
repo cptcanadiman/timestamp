@@ -10,9 +10,9 @@ app.get('/:INFO', function (req, res) {
   
   if (!isNaN(info)) {
   var toUnix = new Date(info * 1000);
-  var months = toUnix.getMonth()
-  var date = toUnix.getDate()
-  var year = toUnix.getFullYear()
+  var months = toUnix.getMonth();
+  var date = toUnix.getDate();
+  var year = toUnix.getFullYear();
   
   res.json({natural : monthArray[months] + ' ' + date + ' ' + year, unix : info})
       
